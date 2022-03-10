@@ -9,32 +9,20 @@
         Title="15 puzzle" Height="500" Width="800" WindowStartupLocation="CenterScreen" KeyDown="DockPanel_KeyDown" Icon="/icon.ico">
     <DockPanel>
         <DockPanel LastChildFill="True">
-            <Menu x:Name="Menu" DockPanel.Dock="Top">
-                <MenuItem Name="MenuStartGame" Header="Start new game" FontSize="16" Click="MenuStartGame_Click">
-                </MenuItem>
-                <MenuItem Name="MenuCancelMyTurn" Header="Cancel my turn" FontSize="16" Visibility="Hidden" Click="CancelMyTurn_Click">
-                </MenuItem>
-                <Label x:Name="labelTime" HorizontalContentAlignment="Center" Content="" Width="100" RenderTransformOrigin="0.5,0.5">
-                    <Label.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform/>
-                            <SkewTransform/>
-                            <RotateTransform/>
-                            <TranslateTransform X="100"/>
-                        </TransformGroup>
-                    </Label.RenderTransform>
-                </Label>
-                <Label x:Name="labelScore" HorizontalContentAlignment="Center" Content="" Width="100" SnapsToDevicePixels="True" RenderTransformOrigin="0.5,0.5">
-                    <Label.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform/>
-                            <SkewTransform/>
-                            <RotateTransform/>
-                            <TranslateTransform X="300"/>
-                        </TransformGroup>
-                    </Label.RenderTransform>
-                </Label>
-            </Menu>
+            <Grid x:Name="Menu" DockPanel.Dock="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150" />
+                    <ColumnDefinition Width="150" />
+                    <ColumnDefinition Width="Auto" MinWidth="290" />
+                    <ColumnDefinition Width="Auto" MinWidth="10" />
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" Name="MenuStartGame" Content="Start new game" FontSize="16" Click="MenuStartGame_Click">
+                </Button>
+                <Button Name="MenuCancelMyTurn" Grid.Column="1" Content="Cancel my turn" FontSize="16" Visibility="Collapsed" Click="CancelMyTurn_Click">
+                </Button>
+                <Label Grid.Column="2" x:Name="labelTime" HorizontalContentAlignment="Center" Content=""/>
+                <Label Grid.Column="3" x:Name="labelScore" HorizontalContentAlignment="Center" Content=""/>
+            </Grid>
             <UniformGrid Name="uniformGrid" DockPanel.Dock="Bottom" Rows="4" Columns="4" Margin="2,2,2,2">
                 <Button Name="button0" Tag="0"/>
                 <Button Name="button1" Tag="1"/>
