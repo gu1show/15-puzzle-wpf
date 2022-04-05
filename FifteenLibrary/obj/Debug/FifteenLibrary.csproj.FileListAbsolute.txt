@@ -1,6 +1,0 @@
-C:\Users\Denis\source\repos\Объектно-ориентированное программирование\Лабораторная работа 2.1\FifteenGame\FifteenLibrary\bin\Debug\FifteenLibrary.dll
-C:\Users\Denis\source\repos\Объектно-ориентированное программирование\Лабораторная работа 2.1\FifteenGame\FifteenLibrary\bin\Debug\FifteenLibrary.pdb
-C:\Users\Denis\source\repos\Объектно-ориентированное программирование\Лабораторная работа 2.1\FifteenGame\FifteenLibrary\obj\Debug\FifteenLibrary.csproj.AssemblyReference.cache
-C:\Users\Denis\source\repos\Объектно-ориентированное программирование\Лабораторная работа 2.1\FifteenGame\FifteenLibrary\obj\Debug\FifteenLibrary.csproj.CoreCompileInputs.cache
-C:\Users\Denis\source\repos\Объектно-ориентированное программирование\Лабораторная работа 2.1\FifteenGame\FifteenLibrary\obj\Debug\FifteenLibrary.dll
-C:\Users\Denis\source\repos\Объектно-ориентированное программирование\Лабораторная работа 2.1\FifteenGame\FifteenLibrary\obj\Debug\FifteenLibrary.pdb
